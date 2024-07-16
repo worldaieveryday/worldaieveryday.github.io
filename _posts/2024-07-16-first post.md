@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Breakthrough in Natural Language Processing"
+title: "First Post"
 date: 2024-07-16
 image: /assets/112.jpg
 ---
