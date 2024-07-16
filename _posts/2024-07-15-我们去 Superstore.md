@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "AI Breakthrough in Natural Language Processing"
-date: 2024-07-16
+title: "我们去 Superstore 吗？去"
+date: 2024-07-15
 image: /assets/ai-nlp.jpg
 ---
 
