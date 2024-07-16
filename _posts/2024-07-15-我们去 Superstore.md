@@ -1,0 +1,12 @@
+---
+layout: post
+title: "AI Breakthrough in Natural Language Processing"
+date: 2024-07-16
+image: /assets/ai-nlp.jpg
+---
+
+This is the content of your post. You can write it in Markdown format.
+
+## Subheading
+
+More content here...
