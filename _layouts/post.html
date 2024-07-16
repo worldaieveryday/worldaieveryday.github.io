@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+  
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image">
+  {% endif %}
+  
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+  .post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  .post-meta {
+    color: #888;
+    font-style: italic;
+  }
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .post-content {
+    line-height: 1.6;
+  }
+</style>

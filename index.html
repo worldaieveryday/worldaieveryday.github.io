@@ -4,24 +4,26 @@ layout: default
 
 <div class="grid">
   {% for post in paginator.posts %}
-    <div class="card">
-      <img src="{{ post.image | default: '/assets/default-image.jpg' }}" alt="{{ post.title }}">
-      <div class="card-content">
-        <div class="card-title">{{ post.title }}</div>
-        <div class="card-date">{{ post.date | date: "%Y/%m/%d" }}</div>
+    <a href="{{ post.url | relative_url }}" class="card-link">
+      <div class="card">
+        <img src="{{ post.image | default: '/assets/default-image.jpg' | relative_url }}" alt="{{ post.title }}">
+        <div class="card-content">
+          <div class="card-title">{{ post.title }}</div>
+          <div class="card-date">{{ post.date | date: "%Y/%m/%d" }}</div>
+        </div>
       </div>
-    </div>
+    </a>
   {% endfor %}
 </div>
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
   {% endif %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
   {% endif %}
 </div>
 {% endif %}
