@@ -61,6 +61,19 @@
             color: #888;
             font-size: 14px;
         }
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .card {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
         @media (max-width: 1200px) {
             .grid {
                 grid-template-columns: repeat(3, 1fr);
