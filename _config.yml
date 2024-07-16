@@ -1,3 +1,21 @@
-theme: jekyll-theme-minimal
-title: Worldaieveryday's homepage
-description: Bookmark this to keep an eye on my project updates!
+# theme: jekyll-theme-minimal
+# title: Worldaieveryday's homepage
+# description: Bookmark this to keep an eye on my project updates!
+
+title: World AI Everyday
+description: Your site description here
+baseurl: ""
+url: "https://worldaieveryday.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 12
+paginate_path: "/page:num/"
+
+# Exclude from processing
+exclude:
+  - README.md
