@@ -28,30 +28,30 @@ jobs:
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           token: ${{ secrets.GITHUB_TOKEN }}  # Use the automatic token for authentication
-      
+
       # Step 2: If there are any Git issues, try to clean them up
       - name: Clean Git Environment
         run: |
           git reset --hard
           git clean -fdx
-          
+
       # Step 3: Setup Hugo environment
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'  # Use the latest version of Hugo
           extended: true          # Use Hugo Extended for SASS/SCSS support
-          
+
       # Step 4: Configure Git for any Git operations
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          
+
       # Step 5: Check Hugo version (helpful for debugging)
       - name: Check Hugo Version
         run: hugo version
-          
+
       # Step 6: Build Hugo site
       - name: Build Hugo Site
         env:
@@ -60,27 +60,26 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --minify
-          
+
       # Step 7: Upload the built site as an artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public  # The built site files are in the public directory
-          
+
   # Deploy job
   deploy:
     # Only run deploy after build is successful
     needs: build
     runs-on: ubuntu-latest
-    
+
     # Specify environment for deployment
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+
     steps:
       # Single step to deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
