@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on World Ai Each Day</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://worldaieveryday.github.io/post/</link>
     <description>Recent content in Posts on World Ai Each Day</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>worldaieveryday@gmail.com (John Liu)</managingEditor>
     <webMaster>worldaieveryday@gmail.com (John Liu)</webMaster>
     <lastBuildDate>Sun, 17 Nov 2024 09:05:42 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://worldaieveryday.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Forth Post</title>
-      <link>http://localhost:1313/post/my-forth-post/</link>
+      <link>https://worldaieveryday.github.io/post/my-forth-post/</link>
       <pubDate>Sun, 17 Nov 2024 09:05:42 -0500</pubDate><author>worldaieveryday@gmail.com (John Liu)</author>
-      <guid>http://localhost:1313/post/my-forth-post/</guid>
+      <guid>https://worldaieveryday.github.io/post/my-forth-post/</guid>
       <description></description>
     </item>
     <item>
       <title>My Third Post</title>
-      <link>http://localhost:1313/post/my-third-post/</link>
+      <link>https://worldaieveryday.github.io/post/my-third-post/</link>
       <pubDate>Sat, 16 Nov 2024 21:04:32 -0500</pubDate><author>worldaieveryday@gmail.com (John Liu)</author>
-      <guid>http://localhost:1313/post/my-third-post/</guid>
+      <guid>https://worldaieveryday.github.io/post/my-third-post/</guid>
       <description></description>
     </item>
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/post/my-second-post/</link>
+      <link>https://worldaieveryday.github.io/post/my-second-post/</link>
       <pubDate>Sat, 16 Nov 2024 21:04:21 -0500</pubDate><author>worldaieveryday@gmail.com (John Liu)</author>
-      <guid>http://localhost:1313/post/my-second-post/</guid>
+      <guid>https://worldaieveryday.github.io/post/my-second-post/</guid>
       <description></description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/post/my-first-post/</link>
+      <link>https://worldaieveryday.github.io/post/my-first-post/</link>
       <pubDate>Sat, 16 Nov 2024 21:04:08 -0500</pubDate><author>worldaieveryday@gmail.com (John Liu)</author>
-      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <guid>https://worldaieveryday.github.io/post/my-first-post/</guid>
       <description></description>
     </item>
   </channel>
